@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+
+</script>
+</head>
+<body>
+
+<h1></h1>
+<p id="return">Return</p>
+
+<script>
+str = "This  is  the  taget  searched string";
+//re = /глава (\d+(\.\d)*)/ig;
+re= /a/ig;
+var found = str.match(re);
+/*alert(found);*/
+
+
+var result=found; //alert(found);   // alert(found[0]);
+
+
+if (found==null){whole_result="Nothing  found"}   
+else {
+
+var whole_result='';
+for (var i = 0; i < found.length; i++) 
+     {
+      whole_result+= '</br>'+found[i];
+     }
+}// end  else
+
+
+$('#return').html("Result=>"+whole_result);
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
